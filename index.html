@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>ウマ娘</title>
+    <meta name="description" content="ウマ娘テストサイト">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|M+PLUS+Rounded+1c:400,500&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="page-title">ウマ娘</h1>
+        <p class="page-desc">ウマ娘テストサイト</p>
+    </header>
+
+    <div class="container">
+        <main>
+            <article class="post-home">
+                <div class="post-title" id="test">
+                    <h2><a href="#">タイトル１</a></h2>
+                </div>
+                <div class="post-thumb">
+                    <p class="post-date"><span>2021</span>12/28</p>
+                    <img class="post-img" src="images/cat1.jpg" alt="猫">
+                </div>
+                <p class="post-desc">
+                  テキスト入力。テキスト入力。テキスト入力。
+                </p>
+                <p class="btn"><a href="#">続きを読む</a></p>
+            </article>
+            <article class="post-home">
+                <div class="post-title">
+                    <h2><a href="#">タイトル２</a></h2>
+                </div>
+                <div class="post-thumb">
+                    <p class="post-date"><span>2021</span>12/28</p>
+                    <img class="post-img" src="images/cat2.jpg" alt="猫">
+                </div>
+                <p class="post-desc">
+                    テキスト入力。テキスト入力。テキスト入力。
+                </p>
+                <p class="btn"><a href="#">続きを読む</a></p>
+            </article>
+            <article class="post-home">
+                <div class="post-title">
+                    <h2><a href="#">タイトル３</a></h2>
+                </div>
+                <div class="post-thumb">
+                    <p class="post-date"><span>2021</span>12/28</p>
+                    <img class="post-img" src="images/cat3.jpg" alt="猫">
+                </div>
+                <p class="post-desc">
+                    テキスト入力。テキスト入力。テキスト入力。
+                </p>
+                <p class="btn"><a href="#">続きを読む</a></p>
+            </article>
+            <article class="post-home">
+                <div class="post-title">
+                    <h2><a href="#">タイトル４</a></h2>
+                </div>
+                <div class="post-thumb">
+                    <p class="post-date"><span>2021</span>12/28</p>
+                    <img class="post-img" src="images/cat4.jpg" alt="猫">
+                </div>
+                <p class="post-desc">
+                    テキスト入力。テキスト入力。テキスト入力。
+                </p>
+                <p class="btn"><a href="#">続きを読む</a></p>
+            </article>
+
+            <audio controls src="crossroad.m4a"></audio>
+
+            <form action="#" method="post" name="contact-form" id="form">
+                血液型
+                <select name="bloodtype">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="O">O</option>
+                    <option value="AB">AB</option>
+                    <option value="不明" selected>不明</option>
+                </select>
+                <input type="submit" value="送信">
+            </form>
+
+            <p id="output"></p>
+
+            <ul class="pagination">
+                <li><span class="current">1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
+        </main>
+
+        <aside>
+            <div class="side-box">
+                <h3>Category</h3>
+                <ul id="list">
+                    <li id="title"><a href="#">猫の種類</a></li>
+                    <li id="price"><a href="#">食事・フード</a></li>
+                    <li id="stock"><a href="#">健康・病気</a></li>
+                    <li><a href="#">猫の生態</a></li>
+                    <li><a href="#">猫と暮らす</a></li>
+                </ul>
+            </div>
+
+            <div class="side-box">
+                <h3>Newsletter</h3>
+                <p>猫やペットに関する最新情報、お知らせ等を配信中！お気軽にご登録ください！</p>
+                <form class="newsletter-form" action="#">
+                    <input type="email" placeholder="hello@example.com">
+                    <input type="submit" value="登録">
+                </form>
+            </div>
+
+            <div class="side-box popular-posts">
+                <h3>Popular Posts</h3>
+                <ul>
+                    <li><a href="#">初めて猫を病院に連れて行く時の心構え</a></li>
+                    <li><a href="#">肉球で愛猫の性格診断ができる？</a></li>
+                    <li><a href="#">動く猫の撮影のコツ</a></li>
+                    <li><a href="#">おすすめのフードは？</a></li>
+                    <li><a href="#">猫に首輪をつけてもいいの？気をつけること5つ</a></li>
+                </ul>
+            </div>
+
+            <section>
+                <form action="#" id="form2">
+                    <input type="submit" value="検索">
+                </form>
+            </section>
+
+        </aside>
+    </div>
+
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://facebook.com/">Facebook</a></li>
+            <li><a href="https://youtube.com/">YouTube</a></li>
+            <li><a href="https://instagram.com/">Instagram</a></li>
+        </ul>
+        <p><small>&copy; 2021 Cat Blog</small></p>
+    </footer>
+    <script>
+        'use strict';
+
+        let todo = ['デザインカンプ作成', 'データ整理', '勉強会申し込み', '牛乳買う'];
+        todo.push('歯医者に行く');
+        for (let item of todo) {
+            console.log(item)
+            const li = `<li><a href="#">${item}</a></li>`;
+            document.getElementById('list').insertAdjacentHTML('beforeend', li);
+            console.log(li)
+        }
+
+        const result = document.getElementsByClassName('post-title');
+        console.log(result[0]);
+        console.log(result[1]);
+        console.log(result[2]);
+        console.log(result[3]);
+
+        let jsbook = { title: 'JavaScript入門', price: 2500, stock: 3 };
+
+        document.getElementById('form').onsubmit = function (event) {
+            event.preventDefault();
+            console.log('クリックされました');
+
+            document.getElementById('title').textContent = jsbook.title;
+            document.getElementById('price').textContent = jsbook.price + '円';
+            document.getElementById('stock').textContent = jsbook.stock;
+
+        };
+        document.getElementById('form').onsubmit = function (event) {
+            event.preventDefault();
+            const search = document.getElementById('form').bloodtype.value;
+            const rigth = '<p id="rigth">いいね！</p>';
+            if(search==='O'){
+            
+                document.getElementById('output').textContent = `「${search}」で正解！`;
+                document.getElementById('output').insertAdjacentHTML('beforeend', rigth);
+            }
+            else{
+                document.getElementById('output').textContent = `「${search}」は不正解…`;
+            
+            }
+            
+        };
+    </script>
+</body>
+
+</html>

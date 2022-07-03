@@ -1,0 +1,20 @@
+[
+{ "Name" : "メジロドーベル",  "URL" :"dobel.m4a", "Pic" : "dobel.png"},
+{ "Name" : "ナリタタイシン",  "URL" :"taishin.m4a", "Pic" : "taishin.png"},
+{ "Name" : "メジロマックイーン",  "URL" :"mac.m4a", "Pic" : "mac.png"},
+{ "Name" : "セイウンスカイ",  "URL" :"sky.m4a", "Pic" : "sky.png"},
+{ "Name" : "ビワハヤヒデ",  "URL" :"biwa.m4a", "Pic" : "biwa.png"},
+{ "Name" : "ゴールドシチー",  "URL" :"city.m4a", "Pic" : "city.png"},
+{ "Name" : "ファインモーション",  "URL" :"fine.m4a", "Pic" : "fine.png"},
+{ "Name" : "フジキセキ",  "URL" :"fuji.m4a", "Pic" : "fuji.png"},
+{ "Name" : "グラスワンダー",  "URL" :"glass.m4a", "Pic" : "glass.png"},
+{ "Name" : "マチカネフクキタル",  "URL" :"huku.m4a", "Pic" : "huku.png"},
+{ "Name" : "キタサンブラック",  "URL" :"kitasan.m4a", "Pic" : "kitasan.png"},
+{ "Name" : "オグリキャップ",  "URL" :"oguri.m4a", "Pic" : "oguri.png"},
+{ "Name" : "ライスシャワー",  "URL" :"rice.m4a", "Pic" : "rice.png"},
+{ "Name" : "シンボリルドルフ",  "URL" :"rudo.m4a", "Pic" : "rudo.png"},
+{ "Name" : "スペシャルウィーク",  "URL" :"supe.m4a", "Pic" : "supe.png"},
+{ "Name" : "タイキシャトル",  "URL" :"taiki.m4a", "Pic" : "taiki.png"},
+{ "Name" : "タマモクロス",  "URL" :"tama.m4a", "Pic" : "tama.png"},
+{ "Name" : "トウカイテイオー",  "URL" :"teio.m4a", "Pic" : "teio.png"}
+]

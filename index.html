@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ウマ娘</title>
-    <meta name="description" content="ウマ娘テストサイト">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>ウマ娘ボイスクイズ</title>
+    <meta name="description" content="トレーナーなら分かって当然！？～声聞き分け特別（OP）～">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
@@ -14,190 +14,642 @@
         rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Twitterシェア ogpタグ -->
+    <meta property="og:title" content="ウマ娘ボイスクイズ" />
+    <meta property="og:description" content="トレーナーなら分かって当然！？～声聞き分け特別（OP）～" />
+    <meta property="og:image" content="https://esoracat.github.io/umamusume/images/ogp.jpg" />
+    <meta property="og:url" content="https://esoracat.github.io/umamusume/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:site" content="@xxxxxxxxx">
+    <meta name="twitter:card" content="summary">
+
+    <!--ツイッターの画像大きい場合
+            <meta name="twitter:card" content="summary_large_image">
+        -->
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+
 </head>
 
 <body>
     <header>
-        <h1 class="page-title">ウマ娘</h1>
-        <p class="page-desc">ウマ娘テストサイト</p>
+        <h1 class="page-title">ウマ娘<br>ボイスクイズ</h1>
+        <p class="page-desc">トレーナーなら分かって当然！？<br>～ 声聞き分け特別（OP）～</p>
     </header>
 
     <div class="container">
         <main>
-            <article class="post-home">
-                <div class="post-title" id="test">
-                    <h2><a href="#">タイトル１</a></h2>
-                </div>
-                <div class="post-thumb">
-                    <p class="post-date"><span>2021</span>12/28</p>
-                    <img class="post-img" src="images/cat1.jpg" alt="猫">
-                </div>
-                <p class="post-desc">
-                  テキスト入力。テキスト入力。テキスト入力。
-                </p>
-                <p class="btn"><a href="#">続きを読む</a></p>
-            </article>
+            <!--第一問-->
             <article class="post-home">
                 <div class="post-title">
-                    <h2><a href="#">タイトル２</a></h2>
+                    <h2><a href="#">第１レース</a></h2>
                 </div>
                 <div class="post-thumb">
-                    <p class="post-date"><span>2021</span>12/28</p>
-                    <img class="post-img" src="images/cat2.jpg" alt="猫">
+                    <p class="post-date"><span>１</span>５</p>
+                    <img id="who1" class="post-img" src="images/hint.png" alt="gate">
                 </div>
-                <p class="post-desc">
-                    テキスト入力。テキスト入力。テキスト入力。
-                </p>
-                <p class="btn"><a href="#">続きを読む</a></p>
+
+                <div class="voice">
+                    <p class="koe">この声は？</p>
+                    <audio id='voice1' controls src=""></audio>
+                </div>
+
+                <section class="answer">
+                    <form action="#" method="post" name="contact-form" id="form1" class="select">
+                        A.
+                        <select name="umamusume" class="namae" id="form1_namae">
+                        </select>
+                    </form>
+
+                    <div class="element" id="output1">
+                        <p><i class="far fa-circle fa-5x fa-fw"></i></p>
+                    </div>
+                </section>
+
+                <p class="marubatu" id="seigo1"></p>
+
+                <section class="kotae">
+                    <form action="#" id="check1">
+                        <input type="submit" value="答え合わせ">
+                    </form>
+                </section>
             </article>
+
+
+            <!--第二問-->
             <article class="post-home">
                 <div class="post-title">
-                    <h2><a href="#">タイトル３</a></h2>
+                    <h2><a href="#">第２レース</a></h2>
                 </div>
                 <div class="post-thumb">
-                    <p class="post-date"><span>2021</span>12/28</p>
-                    <img class="post-img" src="images/cat3.jpg" alt="猫">
+                    <p class="post-date"><span>２</span>５</p>
+                    <img id="who2" class="post-img" src="images/hint.png" alt="gate">
                 </div>
-                <p class="post-desc">
-                    テキスト入力。テキスト入力。テキスト入力。
-                </p>
-                <p class="btn"><a href="#">続きを読む</a></p>
+
+                <div class="voice">
+                    <p class="koe">この声は？</p>
+                    <audio id='voice2' controls src=""></audio>
+                </div>
+
+                <section class="answer">
+                    <form action="#" method="post" name="contact-form" id="form2" class="select">
+                        A.
+                        <select name="umamusume" class="namae" id="form2_namae">
+                        </select>
+                    </form>
+
+                    <div class="element" id="output2">
+                        <p><i class="far fa-circle fa-5x fa-fw"></i></p>
+                    </div>
+                </section>
+
+                <p class="marubatu" id="seigo2"></p>
+
+                <section class="kotae">
+                    <form action="#" id="check2">
+                        <input type="submit" value="答え合わせ">
+                    </form>
+                </section>
             </article>
+
+
+
+            <!--第三問-->
             <article class="post-home">
                 <div class="post-title">
-                    <h2><a href="#">タイトル４</a></h2>
+                    <h2><a href="#">第３レース</a></h2>
                 </div>
                 <div class="post-thumb">
-                    <p class="post-date"><span>2021</span>12/28</p>
-                    <img class="post-img" src="images/cat4.jpg" alt="猫">
+                    <p class="post-date"><span>３</span>５</p>
+                    <img id="who3" class="post-img" src="images/hint.png" alt="gate">
                 </div>
-                <p class="post-desc">
-                    テキスト入力。テキスト入力。テキスト入力。
-                </p>
-                <p class="btn"><a href="#">続きを読む</a></p>
+
+                <div class="voice">
+                    <p class="koe">この声は？</p>
+                    <audio id='voice3' controls src=""></audio>
+                </div>
+
+                <section class="answer">
+                    <form action="#" method="post" name="contact-form" id="form3" class="select">
+                        A.
+                        <select name="umamusume" class="namae" id="form3_namae">
+                        </select>
+                    </form>
+
+                    <div class="element" id="output3">
+                        <p id="right"><i class="far fa-circle fa-5x fa-fw"></i></p>
+                    </div>
+                </section>
+
+                <p class="marubatu" id="seigo3"></p>
+
+                <section class="kotae">
+                    <form action="#" id="check3">
+                        <input type="submit" value="答え合わせ">
+                    </form>
+                </section>
             </article>
 
-            <audio controls src="crossroad.m4a"></audio>
+            <!--第四問-->
+            <article class="post-home">
+                <div class="post-title">
+                    <h2><a href="#">第４レース</a></h2>
+                </div>
+                <div class="post-thumb">
+                    <p class="post-date"><span>４</span>５</p>
+                    <img id="who4" class="post-img" src="images/hint.png" alt="gate">
+                </div>
 
-            <form action="#" method="post" name="contact-form" id="form">
-                血液型
-                <select name="bloodtype">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="O">O</option>
-                    <option value="AB">AB</option>
-                    <option value="不明" selected>不明</option>
-                </select>
-                <input type="submit" value="送信">
-            </form>
+                <div class="voice">
+                    <p class="koe">この声は？</p>
+                    <audio id='voice4' controls src=""></audio>
+                </div>
 
-            <p id="output"></p>
+                <section class="answer">
+                    <form action="#" method="post" name="contact-form" id="form4" class="select">
+                        A.
+                        <select name="umamusume" class="namae" id="form4_namae">
+                        </select>
+                    </form>
 
-            <ul class="pagination">
-                <li><span class="current">1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">&gt;</a></li>
-            </ul>
+                    <div class="element" id="output4">
+                        <p id="right"><i class="far fa-circle fa-5x fa-fw"></i></p>
+                    </div>
+                </section>
+
+                <p class="marubatu" id="seigo4"></p>
+
+                <section class="kotae">
+                    <form action="#" id="check4">
+                        <input type="submit" value="答え合わせ">
+                    </form>
+                </section>
+            </article>
+
+            <!--第五問-->
+            <article class="post-home">
+                <div class="post-title">
+                    <h2><a href="#">第５レース</a></h2>
+                </div>
+                <div class="post-thumb">
+                    <p class="post-date"><span>５</span>５</p>
+                    <img id="who5" class="post-img" src="images/hint.png" alt="gate">
+                </div>
+
+                <div class="voice">
+                    <p class="koe">この声は？</p>
+                    <audio id='voice5' controls src=""></audio>
+                </div>
+
+                <section class="answer">
+                    <form action="#" method="post" name="contact-form" id="form5" class="select">
+                        A.
+                        <select name="umamusume" class="namae" id="form5_namae">
+                        </select>
+                    </form>
+
+                    <div class="element" id="output5">
+                        <p id="right"><i class="far fa-circle fa-5x fa-fw"></i></p>
+                    </div>
+                </section>
+
+                <p class="marubatu" id="seigo5"></p>
+
+                <section class="kotae">
+                    <form action="#" id="check5">
+                        <input type="submit" value="答え合わせ">
+                    </form>
+                </section>
+
+                <!--Twitter-->
+                <article class="post-home twitter">
+                    <div class="post-title">
+                        <h2><a href="#">レース結果をシェア</a></h2>
+                    </div>
+
+                    <div class="twitter-button">
+                        <!--Twitterシェアボタン -->
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                        <a href="//twitter.com/share" class="twitter-share-button" id="twitter" data-text="【 #ウマ娘ボイスクイズ 】
+
+                ～レース結果～
+    １R：
+    ２R：
+    ３R：
+    ４R：
+    ５R：
+
+  #ウマ娘
+  " data-size="large" data-related="ウマ娘" data-url="https://esoracat.github.io/umamusume/" data-lang="ja">
+                            Tweet</a><br>
+
+                    </div>
+                </article>
+
+                <!---
+            <button id="btn">再出走</button>
+        -->
+
+                <p id="page-top"><a href="#">ページトップに戻る</a></p>
+
         </main>
 
         <aside>
-            <div class="side-box">
-                <h3>Category</h3>
-                <ul id="list">
-                    <li id="title"><a href="#">猫の種類</a></li>
-                    <li id="price"><a href="#">食事・フード</a></li>
-                    <li id="stock"><a href="#">健康・病気</a></li>
-                    <li><a href="#">猫の生態</a></li>
-                    <li><a href="#">猫と暮らす</a></li>
-                </ul>
-            </div>
-
-            <div class="side-box">
-                <h3>Newsletter</h3>
-                <p>猫やペットに関する最新情報、お知らせ等を配信中！お気軽にご登録ください！</p>
-                <form class="newsletter-form" action="#">
-                    <input type="email" placeholder="hello@example.com">
-                    <input type="submit" value="登録">
-                </form>
-            </div>
 
             <div class="side-box popular-posts">
-                <h3>Popular Posts</h3>
+                <h3>Race</h3>
                 <ul>
-                    <li><a href="#">初めて猫を病院に連れて行く時の心構え</a></li>
-                    <li><a href="#">肉球で愛猫の性格診断ができる？</a></li>
-                    <li><a href="#">動く猫の撮影のコツ</a></li>
-                    <li><a href="#">おすすめのフードは？</a></li>
-                    <li><a href="#">猫に首輪をつけてもいいの？気をつけること5つ</a></li>
+                    <li id="1R"><a href="#">OP</a></li>
+                    <li id="2R"><a href="#">GⅠ（出走前）</a></li>
+                    <li id="3R"><a href="#">GⅡ（出走前）</a></li>
+                    <li id="4R"><a href="#">GⅢ（出走前）</a></li>
                 </ul>
             </div>
-
-            <section>
-                <form action="#" id="form2">
-                    <input type="submit" value="検索">
-                </form>
-            </section>
-
         </aside>
     </div>
 
     <footer>
         <ul class="footer-nav">
-            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://twitter.com/esoracat">Twitter</a></li>
+            <!--
             <li><a href="https://facebook.com/">Facebook</a></li>
             <li><a href="https://youtube.com/">YouTube</a></li>
             <li><a href="https://instagram.com/">Instagram</a></li>
+            -->
         </ul>
-        <p><small>&copy; 2021 Cat Blog</small></p>
+        <!--
+        <p><small>&copy; </small></p>
+        -->
+
     </footer>
+
+
+
     <script>
         'use strict';
 
-        let todo = ['デザインカンプ作成', 'データ整理', '勉強会申し込み', '牛乳買う'];
-        todo.push('歯医者に行く');
+        const result = document.forms['contact-form'].elements['bloodtype']
+
+        console.log(result);
+
+        const result2 = document.forms[0].elements[0]
+
+        console.log(result2);
+
+
+        let todo = [];
+        console.log(todo)
         for (let item of todo) {
             console.log(item)
-            const li = `<li><a href="#">${item}</a></li>`;
-            document.getElementById('list').insertAdjacentHTML('beforeend', li);
+            const li = `<option value="4">${item}</option>`;
+            /*
+            document.getElementsByClassName('name').insertAdjacentHTML('beforeend', li);
+            */
             console.log(li)
         }
 
-        const result = document.getElementsByClassName('post-title');
-        console.log(result[0]);
-        console.log(result[1]);
-        console.log(result[2]);
-        console.log(result[3]);
+        let yomikomi;
 
-        let jsbook = { title: 'JavaScript入門', price: 2500, stock: 3 };
+        window.addEventListener('load', () => {
 
-        document.getElementById('form').onsubmit = function (event) {
+
+
+            //voice.jsonファイルの読み込み
+
+            $.ajax({ url: 'voice.json', dataType: 'json', async: false })
+                .done(function (data) {
+                    yomikomi = data;
+
+                    data.forEach(function (item, index) {
+                        todo.push(item.Name);
+                    });
+
+                })
+                .fail(function () {
+                    window.alert('読み込みエラー');
+                });
+
+
+
+
+        })
+        let arr = todo
+        window.addEventListener('load', () => {
+
+
+
+            //乱数
+            let random = Math.floor(Math.random() * todo.length);
+
+            console.log("ランダム：" + todo[random]);
+
+
+            let a = arr.length;
+            //シャッフルアルゴリズム
+            while (a) {
+                var j = Math.floor(Math.random() * a);
+                var t = arr[--a];
+                arr[a] = arr[j];
+                arr[j] = t;
+            }
+
+            //シャッフルされた配列の要素を順番に表示する
+            arr.forEach(function (value) { console.log(value) });
+            console.log("一問目は、、、" + arr[0]);
+
+            let pic1, pic2, pic3, pic4, pic5;
+            //ボイスの入力
+            let max = 18 //18人
+
+            for (let i = 0; i < max; i++) {
+                if (yomikomi[i].Name === arr[0]) {
+                    let aud1 = document.getElementById('voice1');
+                    voice1.setAttribute('src', `voice/${yomikomi[i].URL}`);
+                    pic1 = yomikomi[i].Pic
+                }
+                if (yomikomi[i].Name === arr[1]) {
+                    let aud2 = document.getElementById('voice2');
+                    voice2.setAttribute('src', `voice/${yomikomi[i].URL}`);
+                    pic2 = yomikomi[i].Pic
+
+                }
+                if (yomikomi[i].Name === arr[2]) {
+                    let aud3 = document.getElementById('voice3');
+                    voice3.setAttribute('src', `voice/${yomikomi[i].URL}`);
+                    pic3 = yomikomi[i].Pic
+
+                }
+                if (yomikomi[i].Name === arr[3]) {
+                    let aud4 = document.getElementById('voice4');
+                    voice4.setAttribute('src', `voice/${yomikomi[i].URL}`);
+                    pic4 = yomikomi[i].Pic
+
+                }
+                if (yomikomi[i].Name === arr[4]) {
+                    let aud5 = document.getElementById('voice5');
+                    voice5.setAttribute('src', `voice/${yomikomi[i].URL}`);
+                    pic5 = yomikomi[i].Pic
+
+                }
+            }
+
+
+            //写真置き換え
+
+            let img1 = document.getElementById('who1');
+            let img2 = document.getElementById('who2');
+            let img3 = document.getElementById('who3');
+            let img4 = document.getElementById('who4');
+            let img5 = document.getElementById('who5');
+
+            img1.onclick = function () {
+                who1.setAttribute('src', `images/${pic1}`);
+            };
+            img2.onclick = function () {
+                who2.setAttribute('src', `images/${pic2}`);
+            };
+            img3.onclick = function () {
+                who3.setAttribute('src', `images/${pic3}`);
+            };
+            img4.onclick = function () {
+                who4.setAttribute('src', `images/${pic4}`);
+            };
+            img5.onclick = function () {
+                who5.setAttribute('src', `images/${pic5}`);
+            };
+
+
+
+            //VOICE置き換え
+            /*
+            let aud = document.getElementById('voice1');
+            voice1.setAttribute('src', 'voice/teio.m4a');
+            */
+
+            //arr[0]＝NameのURLを持ってくる
+
+            //  Twitterのテキスト編集
+            let twitter = document.getElementById('twitter');
+            twitter.setAttribute('data-text', `【 #ウマ娘ボイスクイズ 】
+
+     ～レース結果～
+１R：${arr[0]}
+２R：${arr[1]}
+３R：${arr[2]}
+４R：${arr[3]}
+５R：${arr[4]}
+
+#ウマ娘
+`);
+
+
+
+        })
+
+
+        //答え合わせ
+        document.getElementById('check1').onsubmit = function (event) {
             event.preventDefault();
-            console.log('クリックされました');
-
-            document.getElementById('title').textContent = jsbook.title;
-            document.getElementById('price').textContent = jsbook.price + '円';
-            document.getElementById('stock').textContent = jsbook.stock;
+            const search = document.getElementById('form1').umamusume.value;
+            console.log(search)
+            kakunin(search, 'seigo1', 'output1', 0)
 
         };
-        document.getElementById('form').onsubmit = function (event) {
+
+        document.getElementById('check2').onsubmit = function (event) {
             event.preventDefault();
-            const search = document.getElementById('form').bloodtype.value;
-            const rigth = '<p id="rigth">いいね！</p>';
-            if(search==='O'){
-            
-                document.getElementById('output').textContent = `「${search}」で正解！`;
-                document.getElementById('output').insertAdjacentHTML('beforeend', rigth);
-            }
-            else{
-                document.getElementById('output').textContent = `「${search}」は不正解…`;
-            
-            }
-            
+            const search = document.getElementById('form2').umamusume.value;
+            console.log(search)
+            kakunin(search, 'seigo2', 'output2', 1)
+
         };
+
+        document.getElementById('check3').onsubmit = function (event) {
+            event.preventDefault();
+            const search = document.getElementById('form3').umamusume.value;
+            console.log(search)
+            kakunin(search, 'seigo3', 'output3', 2)
+
+        };
+
+        document.getElementById('check4').onsubmit = function (event) {
+            event.preventDefault();
+            const search = document.getElementById('form4').umamusume.value;
+            console.log(search)
+            kakunin(search, 'seigo4', 'output4', 3)
+
+        };
+
+        document.getElementById('check5').onsubmit = function (event) {
+            event.preventDefault();
+            const search = document.getElementById('form5').umamusume.value;
+            console.log(search)
+            kakunin(search, 'seigo5', 'output5', 4)
+
+        };
+
+
+
+        //正誤判定
+        function kakunin(kotae, seigo, output, race_no) {
+            var obj = document.getElementById(output);
+            var result = obj.classList.contains("-visible");
+            if (result) {
+                obj.classList.remove("-visible");
+            }
+            if (kotae === arr[race_no]) {
+                document.getElementById(seigo).textContent = `的中！`;
+                const div = document.getElementById(output);
+                div.classList.add('-visible');
+            }
+            else {
+                document.getElementById(seigo).textContent = `ざんねん。ゲートを開くとヒントが...?`;
+                const div = document.getElementById(output);
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+        let namae = `
+        <option value=""> 【 解答を選ぶ 】 
+</option>
+<optgroup label="ア行">
+<option value="アイネスフウジン">アイネスフウジン</option>
+<option value="アグネスタキオン">アグネスタキオン</option>
+<option value="アグネスデジタル">アグネスデジタル</option>
+<option value="アストンマーチャン">アストンマーチャン</option>
+<option value="アドマイヤベガ">アドマイヤベガ</option>
+<option value="イナリワン">イナリワン</option>
+<option value="イクノディクタス">イクノディクタス</option>
+<option value="ウイニングチケット">ウイニングチケット</option>
+<option value="ウオッカ">ウオッカ</option>
+<option value="エアグルーヴ">エアグルーヴ</option>
+<option value="エアシャカール">エアシャカール</option>
+<option value="エイシンフラッシュ">エイシンフラッシュ</option>
+<option value="エルコンドルパサー">エルコンドルパサー</option>
+<option value="オグリキャップ">オグリキャップ</option></optgroup>
+<optgroup label="カ行">
+<option value="カレンチャン">カレンチャン</option>
+<option value="カワカミプリンセス">カワカミプリンセス</option>
+<option value="キタサンブラック">キタサンブラック</option>
+<option value="キングヘイロー">キングヘイロー</option>
+<option value="グラスワンダー">グラスワンダー</option>
+<option value="ゴールドシチー">ゴールドシチー</option>
+<option value="ゴールドシップ">ゴールドシップ</option>
+<option value="コパノリッキー">コパノリッキー</option></optgroup>
+<optgroup label="サ行">
+<option value="サイレンススズカ">サイレンススズカ</option>
+<option value="サクラチヨノオー">サクラチヨノオー</option>
+<option value="サクラバクシンオー">サクラバクシンオー</option>
+<option value="サクラローレル">サクラローレル</option>
+<option value="サトノダイヤモンド">サトノダイヤモンド</option>
+<option value="シーキングザパール">シーキングザパール</option>
+<option value="シリウスシンボリ">シリウスシンボリ</option>
+<option value="シンコウウインデイ">シンコウウインデイ</option>
+<option value="シンボリクリスエス">シンボリクリスエス</option>
+<option value="シンボリルドルフ">シンボリルドルフ</option>
+<option value="スイープトウショウ">スイープトウショウ</option>
+<option value="スペシャルウィーク">スペシャルウィーク</option>
+<option value="スマートファルコン">スマートファルコン</option>
+<option value="スーパークリーク">スーパークリーク</option>
+<option value="セイウンスカイ">セイウンスカイ</option>
+<option value="ゼンノロブロイ">ゼンノロブロイ</option></optgroup>
+<optgroup label="タ行">
+<option value="タイキシャトル">タイキシャトル</option>
+<option value="ダイワスカーレット">ダイワスカーレット</option>
+<option value="ダイタクヘリオス">ダイタクヘリオス</option>
+<option value="タニノギムレット">タニノギムレット</option>
+<option value="タマモクロス">タマモクロス</option>
+<option value="ツインターボ">ツインターボ</option>
+<option value="ツルマルツヨシ">ツルマルツヨシ</option>
+<option value="テイエムオペラオー">テイエムオペラオー</option>
+<option value="トウカイテイオー">トウカイテイオー</option>
+<option value="トーセンジョーダン">トーセンジョーダン</option></optgroup>
+<optgroup label="ナ行">
+<option value="ナイスネイチャ">ナイスネイチャ</option>
+<option value="ナカヤマファスタ">ナカヤマファスタ</option>
+<option value="ナリタタイシン">ナリタタイシン</option>
+<option value="ナリタトップロード">ナリタトップロード</option>
+<option value="ナリタブライアン">ナリタブライアン </option>
+<option value="ニシノフラワー">ニシノフラワー </option></optgroup>
+<optgroup label="ハ行">
+<option value="ハッピーミーク">ハッピーミーク</option>
+<option value="ハルウララ">ハルウララ</option>
+<option value="バンブーメモリー">バンブーメモリー</option>
+<option value="ビコーペガサス">ビコーペガサス</option>
+<option value="ヒシアケボノ">ヒシアケボノ</option>
+<option value="ヒシアマゾン">ヒシアマゾン</option>
+<option value="ビターグラッセ">ビターグラッセ</option>
+<option value="ビワハヤヒデ">ビワハヤヒデ</option>
+<option value="ファインモーション">ファインモーション</option>
+<option value="フジキセキ">フジキセキ</option></optgroup>
+<optgroup label="マ行">
+<option value="マチカネタンホイザ">マチカネタンホイザ</option>
+<option value="マチカネフクキタル">マチカネフクキタル</option>
+<option value="マーベラスサンデー">マーベラスサンデー</option>
+<option value="マヤノトップガン">マヤノトップガン</option>
+<option value="マルゼンスキー">マルゼンスキー</option>
+<option value="マンハッタンカフェ">マンハッタンカフェ</option>
+<option value="ミスターシービー">ミスターシービー</option>
+<option value="ミホノブルボン">ミホノブルボン</option>
+<option value="メイショウドトウ">メイショウドトウ</option>
+<option value="メジロアルダン">メジロアルダン</option>
+<option value="メジロドーベル">メジロドーベル</option>
+<option value="メジロパーマー">メジロパーマー</option>
+<option value="メジロブライト">メジロブライト</option>
+<option value="メジロマックイーン">メジロマックイーン　</option>
+<option value="メジロライアン">メジロライアン</option></optgroup>
+<optgroup label="ヤ行">
+<option value="ヤエノムテキ">ヤエノムテキ</option>
+<option value="ヤマニンゼファー">ヤマニンゼファー</option>
+<option value="ユキノビジン">ユキノビジン</option></optgroup>    
+<optgroup label="ラ行">
+<option value="ライスシャワー">ライスシャワー</option>
+<option value="リトルココン">リトルココン</option></optgroup>
+`;
+
+        for (let i = 1; i < 6; i++) {
+            document.getElementById(`form${i}_namae`).insertAdjacentHTML('beforeend', namae);
+        }
+
+        function doReloadNoCache() {
+
+            // キャッシュを無視してサーバーからリロード
+            window.location.reload(true);
+
+        }
+
+        /*
+        //再出走
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById("btn").addEventListener("click", function () {
+                window.location.reload(true);
+            })
+        });
+        */
+
+        $(function () {
+            $("#page-top a").click(function () {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000);//この場所に数値を入れるとミリ秒単位で移動のスピードを調整できます
+                return false;
+            });
+        });
+
     </script>
 </body>
 
